@@ -1,7 +1,7 @@
 '''
 Author: Joel Jackson
 Date: 21-01-2021
-Description: program to create a symmetric difference. 
+Description: program to find minimum and maximum in set. 
 
 '''
 
