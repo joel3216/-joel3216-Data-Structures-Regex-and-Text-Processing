@@ -14,5 +14,7 @@ try:
         mySet.remove(int(input("enter item name to delete.")))
 except ValueError:
     print("invalid input")
+except KeyError:
+    print("entered item was not in set")
 finally:
     print(mySet)
