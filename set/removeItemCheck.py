@@ -3,27 +3,21 @@ Author: Joel Jackson
 Date: 21-01-2021
 Description: program to remove an item from a set if it is present in the set.
 '''
-def getInput():
-    try:
-        mySet=set()
-        limit=int(input("enter the number of items to add to the set"))
-        if limit<0:
+import inputSet
+
+class removeListItem:
+    def removeItem(self):
+        element=int(input("enter the element to delete"))
+        if element in mySet:
+            mySet.remove(element)
+        else:
             raise ValueError
-        for count in range(limit):
-            mySet.add(int(input("enter item no."+str(count+1)+" ")))
-    except ValueError:
-        print("invalid input")
-    finally:
         return mySet
 
-mySet=getInput()
+mySet=inputSet.inputSet.getIntInput(inputSet)
 try:
-    element=int(input("enter the element to delete"))
-    if element in mySet:
-        mySet.remove(element)
-    else:
-        raise ValueError
+    mySet=removeListItem.removeItem(removeListItem)
 except ValueError:
     print("invalid input")
-finally:
+else:
     print(mySet)
