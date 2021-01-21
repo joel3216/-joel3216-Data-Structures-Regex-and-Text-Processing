@@ -5,19 +5,8 @@ Description: program to find minimum and maximum in set.
 
 '''
 
-def getInput():
-    try:
-        mySet=set()
-        limit=int(input("enter the number of items to add to the set"))
-        if limit<0:
-            raise ValueError
-        for count in range(limit):
-            mySet.add(int(input("enter item no."+str(count+1)+" ")))
-    except ValueError:
-        print("invalid input")
-    finally:
-        return mySet
+import inputSet
     
-mySet=getInput()
+mySet=inputSet.inputSet.getIntInput(inputSet)
 print("minimum: "+str(min(mySet)))
 print("maximum: "+str(max(mySet)))
