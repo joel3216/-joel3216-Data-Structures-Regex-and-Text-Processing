@@ -15,6 +15,7 @@ class inputList:
                 myList.append(input("enter item no."+str(count+1)+" "))
         except ValueError:
             print("invalid input")
+            return []
         else:
             return myList
     
@@ -28,5 +29,6 @@ class inputList:
                 myList.append(int(input("enter item no."+str(count+1)+" ")))
         except ValueError:
             print("invalid input")
+            return []
         else:
             return myList
