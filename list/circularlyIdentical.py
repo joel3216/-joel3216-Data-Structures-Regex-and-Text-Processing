@@ -1,7 +1,7 @@
 '''
 Author: Joel Jackson
 Date: 21-01-2021
-Description:  python program to check whether two lists are circularly identical.  
+Description:  python program to check whether two lists are circularly identical.
 
 '''
 import inputList
