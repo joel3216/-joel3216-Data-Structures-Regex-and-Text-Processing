@@ -6,9 +6,12 @@ Description: program to add member(s) in a set.
 
 mySet={1,2,3,4}
 try:
-    item=int(input("enter the item to add to the set"))
+    limit=int(input("enter the number of items to add to the set"))
+    if limit<0:
+        raise ValueError
+    for count in range(limit):
+        mySet.add(int(input("enter item no."+str(count+1)+" ")))
 except ValueError:
     print("invalid input")
-else:
-    mySet.add(item)
+finally:
     print(mySet)
