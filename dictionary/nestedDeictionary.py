@@ -5,7 +5,7 @@ Description: program to convert a list into a nested dictionary of keys.
 '''
 mylist=input("enter the list ").split(",")
 dictionary=current={}
-for element in reversed(mylist):
+for element in mylist:
     current[element]={}
     current=current[element]
 print(dictionary)
