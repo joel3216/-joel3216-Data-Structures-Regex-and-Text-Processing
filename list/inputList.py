@@ -25,7 +25,7 @@ class inputList:
             if limit<0:
                 raise ValueError
             for count in range(limit):
-                myList.append(input("enter item no."+str(count+1)+" "))
+                myList.append(int(input("enter item no."+str(count+1)+" ")))
         except ValueError:
             print("invalid input")
         else:

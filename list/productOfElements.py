@@ -5,22 +5,14 @@ Description: Python program to product all the items in a list.
 
 '''
 
-def getInput():
-    try:
-        myList=list()
-        limit=int(input("enter the number of items to add to the list"))
-        if limit<0:
-            raise ValueError
-        for count in range(limit):
-            myList.append(int(input("enter item no."+str(count+1)+" ")))
-    except ValueError:
-        print("invalid input")
-    else:
-        return myList
+import inputList
+if __name__ == "__main__":
+    
+    myListObj=inputList.inputList()
+    myList=myListObj.getIntInput()
 
-myList=getInput()
-if(myList):
-    product=0
-    for number in myList:
-        product*=number
-    print(product)
+    if(myList):
+        product=1
+        for number in myList:
+            product*=number
+        print(product)
